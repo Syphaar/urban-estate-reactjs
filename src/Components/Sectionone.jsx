@@ -9,7 +9,7 @@ const Heading = [
 const Sectionone = ({ sectiononeRef }) => {
     return (
         <section ref={sectiononeRef} id="sectionone">
-            <div className="flex justify-center items-center w-full h-[100vh] bg-[url(https://res.cloudinary.com/dlcoacdkb/image/upload/v1740655214/background_kkis5e.jpg)] bg-cover bg-no-repeat bg-center bg-fixed px-7 md:px-10 lg:px-16 xl:px-20">
+            <div className="flex justify-center items-center w-full h-[100vh] bg-[url(https://res.cloudinary.com/dlcoacdkb/image/upload/v1740655214/background_kkis5e.jpg)] bg-cover bg-no-repeat bg-center px-7 md:px-10 lg:px-16 xl:px-20">
                 <div className="w-full flex justify-center text-center">
                    {Heading.map((data) => (
                         <div key={data.id} >

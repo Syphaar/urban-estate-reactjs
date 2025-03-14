@@ -48,7 +48,7 @@ const Faq = () => {
 
     return(
         <section>
-            <div className="lg:flex sm:flex-row-reverse gap-10 px-7 pb-12 md:pb-14 md:px-10 lg:px-16 xl:px-20">
+            <div className="lg:flex sm:flex-row-reverse gap-10 px-7 pb-12 overflow-hidden md:pb-14 md:px-10 lg:px-16 xl:px-20">
                 <div className="flex w-full justify-center" data-aos="fade-left">
                     <div className="w-[500px] pb-4 lg:w-[470px] xl:w-[500px]">
                         <div className="pb-4 text-center">
