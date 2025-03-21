@@ -1,6 +1,7 @@
 import { FaBed } from "react-icons/fa6";
 import { LuBath } from "react-icons/lu";
 import { RiRulerLine } from "react-icons/ri";
+import PropTypes from "prop-types"; // Import prop-types
 
 const Designs = [
     {
@@ -86,6 +87,14 @@ const Properties = ({ projectsRef }) => {
             </div>
         </section>
     )
-}
+};
+
+// Define prop types
+Properties.propTypes = {
+    projectsRef: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.any }),
+    ]),
+};
 
 export default Properties;

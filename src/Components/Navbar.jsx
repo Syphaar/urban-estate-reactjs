@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types"; // Import prop-types
 
 const Navbar = ({ scrollToSection, activeSection }) => {
     let Links = [
@@ -44,6 +45,12 @@ const Navbar = ({ scrollToSection, activeSection }) => {
             </div>
         </div>
     );
-}
+};
+
+// **Define PropTypes**
+Navbar.propTypes = {
+    scrollToSection: PropTypes.func.isRequired, // Expecting a function
+    activeSection: PropTypes.string.isRequired, // Expecting a string
+};
  
 export default Navbar;

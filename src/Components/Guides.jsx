@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"; // Import prop-types
+
 const Designs = [
     {
         id:1,
@@ -51,6 +53,14 @@ const Guides = ({ aboutRef }) => {
             </div>
         </section>
     )
-}
+};
+
+// Define prop types
+Guides.propTypes = {
+    aboutRef: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.any }),
+    ]),
+};
 
 export default Guides;

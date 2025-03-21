@@ -2,6 +2,7 @@ import { BsHouseDoor } from "react-icons/bs";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { LuCirclePercent } from "react-icons/lu";
 import { FaSackDollar } from "react-icons/fa6";
+import PropTypes from "prop-types"; // Import prop-types
 
 const Heading = [
     {
@@ -71,6 +72,14 @@ const About = ({ servicesRef }) => {
             </div>
         </section>
     )
-}
+};
+
+// Define prop types
+About.propTypes = {
+    servicesRef: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.any }),
+    ]),
+};
 
 export default About;

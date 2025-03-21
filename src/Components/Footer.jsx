@@ -1,5 +1,6 @@
 import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
+import PropTypes from "prop-types"; // Import prop-types
 
 const Heading = [
     {
@@ -63,6 +64,13 @@ const Footer = ({ contactRef }) => {
             </div>
         </section>
     )
-}
+};
+
+Footer.propTypes = {
+    contactRef: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.any }),
+    ]),
+};  
 
 export default Footer;

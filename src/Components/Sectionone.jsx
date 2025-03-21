@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"; // Import prop-types
+
 const Heading = [
     {
         id:1, 
@@ -21,6 +23,14 @@ const Sectionone = ({ sectiononeRef }) => {
             </div>
         </section>
     )
-}
+};
+
+// Define prop types
+Sectionone.propTypes = {
+    sectiononeRef: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.any }),
+    ]),
+};
 
 export default Sectionone;
